@@ -1,6 +1,9 @@
 {
   "name": "firstapp",
   "version": "0.0.0",
+  "engines": {
+    "node": "14.18.0"
+  },
   "scripts": {
     "heroku-postbuild": "ng build --prod",
     "ng": "ng",
