@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <h2>Science Today</h2>
+        <div *ngFor="let x of trendingScience" class="col-lg-4 d-flex align-items-stretch">
+            <div class="card">
+                <img class="card-img-top" src="{{x.urlToImage}}" alt="Card image cap">
+                <div class="card-body">
+                    <br>
+                    <h5 class="card-title">{{x.title}}</h5>
+                    <p class="card-text">{{x.description}}</p>
+                    <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Read More
+                      </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger" id="exampleModalLabel">Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-danger">
+            Description
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
